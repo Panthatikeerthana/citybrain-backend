@@ -98,6 +98,11 @@ public class SecurityConfig {
             }
         }
 
+        // Allowed deployed Vercel domains
+        config.addAllowedOrigin("https://frontend-three-topaz-35.vercel.app");
+        config.addAllowedOrigin("https://frontend-keerthana-06d2.vercel.app");
+        config.addAllowedOriginPattern("https://*.vercel.app");
+
         // Standard local development origins
         config.addAllowedOrigin("http://localhost:5173");
         config.addAllowedOrigin("http://127.0.0.1:5173");
